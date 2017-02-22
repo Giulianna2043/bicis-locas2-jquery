@@ -56,7 +56,7 @@ function validacionEmail(){
      else{
          if (email.length>=0)
           {
-            $("#input-email").after("<span>Campo requerido </span>")
+            $("#input-email").after("<span>Email incorrecto </span>")
           }
      }
 }
@@ -69,7 +69,7 @@ function validacionPassword(){
 
         if(password === "123456" || password == "098754"|| password.length <=6)
             {
-                $("#input-password").after("<span>Campo requerido </span>")
+                $("#input-password").after("<span>Password incorrecto </span>")
             }
         else
         {
@@ -85,7 +85,7 @@ function validateOption(){
     if(tipo == 0)
     {
         //createMessage("#select",texto7)
-        $("#select").after("<span>Campo requerido </span>")
+        $("#select").after("<span>Selecciona una opcion </span>")
     }
     else
     {
