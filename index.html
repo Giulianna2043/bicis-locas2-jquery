@@ -12,6 +12,11 @@
     <link href="https://fonts.googleapis.com/css?family=Prompt:200,300,400,500" rel="stylesheet">
     <!-- Optional theme -->
     <link rel="stylesheet" href="css/registro.css">
+    <script
+       src="https://code.jquery.com/jquery-3.1.1.js"
+       integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+       crossorigin="anonymous">
+   </script>
   </head>
   <body>
     <section class="form-container">
@@ -25,14 +30,14 @@
           <div class="name-container input-box">
             <label for="name" class="sr-only">Nombre</label>
             <input type="text" id="name" class="form-control"
-            placeholder="Ingrese su nombre" autofocus="" onkeyup="validacionNombre('name')" >
+            class="campo"placeholder="Ingrese su nombre" autofocus="" >
           </div>
 
            <!--apellido-->
           <div class="lastname-container input-box">
             <label for="lastname" class="sr-only">Apellido</label>
             <input type="text" id="lastname" class="form-control"
-            placeholder="Ingrese su apellido"  onkeyup="validacionNombre('lastname')">
+            placeholder="Ingrese su apellido"  >
           </div>
 
            <!--correo electronico-->
@@ -40,7 +45,8 @@
             <label for="inputEmail" class="sr-only">
               Correo Electrónico
             </label>
-            <input type="email" id="input-email" class="form-control" placeholder="Ingrese su correo electrónico" onkeyup="validacionEmail(event)" >
+            <input type="email" id="input-email" class="form-control" placeholder="Ingrese su correo electrónico"  >
+            
           </div>
 
            <!--password-->
@@ -48,12 +54,12 @@
             <label for="inputPassword" class="sr-only">
               Contraseña
             </label>
-            <input type="password" id="input-password" class="form-control" placeholder="Ingrese su contraseña" onkeyup="validacionPassword(event)">
+            <input type="password" id="input-password" class="form-control" placeholder="Ingrese su contraseña" >
           </div>
 
            <!--options-->
           <div class="form-group input-box">
-            <select class="form-control" onchange="validateOption(event)" id="select">
+            <select class="form-control"  id="select">
               <option value="0">Selecciona tu tipo de bici</option>
               <option value="urbana">Urbana</option>
               <option value="treking">Treking</option>
@@ -76,7 +82,9 @@
       </div>
     </section>
     <!-- /container -->
-    <script type='text/javascript' src='js/main.js'></script>
+    
+    <script src="js/query.js"></script>
+     <!-- /<script type='text/javascript' src='js/main.js'></script> -->
     <script type='text/javascript' src='js/donottouchthisfile.js'></script>
   </body>
 </html>
